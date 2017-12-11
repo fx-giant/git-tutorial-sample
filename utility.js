@@ -9,6 +9,7 @@ function createQueryStrings(query) {
         result += name + "=" + query[name];
     }
     return result;
+    //this is yun qiang 's change
 }
 
 function getQueryStrings() {
