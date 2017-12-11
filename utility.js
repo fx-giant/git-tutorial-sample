@@ -1,14 +1,15 @@
 function createQueryStrings(query) {
     var result = "";
-    var first = true;
     for (var name in query) {
         if (first === true)
             first = !first;
         else
             result += "&";
+		first = false;
         result += name + "=" + query[name];
     }
     return result;
+    //this is yun qiang 's change
 }
 
 function getQueryStrings() {
