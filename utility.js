@@ -1,10 +1,7 @@
 function createQueryStrings(query) {
     var result = "";
-    var first = true;
     for (var name in query) {
-        if (first)
-            first = !first;
-        else
+		if (result != "")
             result += "&";
         result += name + "=" + query[name];
     }
