@@ -3,12 +3,14 @@ function createQueryStrings(query) {
     var first = true;
     for (var name in query) {
         if (first)
-            first = !first;
+            first = false;
         else
             result += "&";
+		//appending all
         result += name + "=" + query[name];
     }
     return result;
+	// return "empty"
 }
 
 function getQueryStrings() {
