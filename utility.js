@@ -2,7 +2,7 @@ function createQueryStrings(query) {
     var result = "";
     var first = true;
     for (var name in query) {
-        if (first)
+        if (first === true)
             first = !first;
         else
             result += "&";
